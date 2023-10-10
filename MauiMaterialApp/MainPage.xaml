@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiMaterialApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui">
+
+    <VerticalStackLayout Margin="20">
+        <Label FontSize="30" Text="Button" />
+        <VerticalStackLayout>
+            <mdc:Button Style="{DynamicResource ElevatedButtonStyle}" Text="Elevated" />
+            <mdc:Button Style="{DynamicResource FilledButtonStyle}" Text="Filled" />
+            <mdc:Button Style="{DynamicResource FilledTonalButtonStyle}" Text="FilledTonal" />
+            <mdc:Button Style="{DynamicResource OutlinedButtonStyle}" Text="Outlined" />
+            <mdc:Button Style="{StaticResource TextButtonStyle}" Text="Text" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
